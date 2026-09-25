@@ -18,6 +18,7 @@ The four source databases run as independent HTTP services on three
 laptops connected to the same Wi-Fi network; the Streamlit mediator on
 Laptop 3 queries them live, with per-node health checks and latency
 monitoring. Setup steps: [SETUP_3_LAPTOPS.md](SETUP_3_LAPTOPS.md)
+(sample_activity_logs.json contains logs from a live 3-laptop demo run, showing remote queries and verdicts)
 
 ## 3–4. Schema design + populated data
 Four separate SQLite files under `data/`, each simulating a system built in
