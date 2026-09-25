@@ -13,6 +13,11 @@ evidence integrated from all four sources at once (e.g. "registered with
 manufacturer but never dispatched by any distributor" → *suspicious*, even
 though no single source says that on its own). This matches the course's
 "decision-centric integration" framing directly.
+## Multi-laptop deployment over Wi-Fi
+The four source databases run as independent HTTP services on three
+laptops connected to the same Wi-Fi network; the Streamlit mediator on
+Laptop 3 queries them live, with per-node health checks and latency
+monitoring. Setup steps: [SETUP_3_LAPTOPS.md](SETUP_3_LAPTOPS.md)
 
 ## 3–4. Schema design + populated data
 Four separate SQLite files under `data/`, each simulating a system built in
