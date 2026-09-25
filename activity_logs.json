@@ -1,0 +1,1610 @@
+[
+  {
+    "timestamp": "2026-09-18 17:36:49.677",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: https://randomqr.com",
+    "details": "Verdict: NAKLI | Reason: No manufacturer record exists for this code \u2014 it was never produced by any registered manufacturer.",
+    "status": "ERROR",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:49.652",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:49.629",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:49.599",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:49.541",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (0 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:33.745",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: https://randomqr.com",
+    "details": "Verdict: NAKLI | Reason: No manufacturer record exists for this code \u2014 it was never produced by any registered manufacturer.",
+    "status": "ERROR",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:33.724",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:33.695",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:33.669",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:33.602",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (0 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:32.724",
+    "category": "SYSTEM",
+    "action": "Camera QR Scanned",
+    "details": "Successfully decoded 'https://randomqr.com' from camera input",
+    "status": "SUCCESS",
+    "node": "Camera Scanner"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:23.300",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-2023",
+    "details": "Verdict: SUSPICIOUS | Reason: Code is registered with a manufacturer, but no authorised distributor ever dispatched it \u2014 possible diverted/grey-market stock.",
+    "status": "WARNING",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:23.276",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:23.235",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:23.207",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:23.134",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:15.815",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-2023",
+    "details": "Verdict: SUSPICIOUS | Reason: Code is registered with a manufacturer, but no authorised distributor ever dispatched it \u2014 possible diverted/grey-market stock.",
+    "status": "WARNING",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:15.796",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:15.761",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:15.730",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:15.543",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:03.036",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-2023",
+    "details": "Verdict: SUSPICIOUS | Reason: Code is registered with a manufacturer, but no authorised distributor ever dispatched it \u2014 possible diverted/grey-market stock.",
+    "status": "WARNING",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:03.014",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:02.969",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:02.936",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:02.795",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:00.796",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-2023",
+    "details": "Verdict: SUSPICIOUS | Reason: Code is registered with a manufacturer, but no authorised distributor ever dispatched it \u2014 possible diverted/grey-market stock.",
+    "status": "WARNING",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:00.776",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:00.747",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:00.722",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-18 17:36:00.657",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:53.427",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-2023",
+    "details": "Verdict: SUSPICIOUS | Reason: Code is registered with a manufacturer, but no authorised distributor ever dispatched it \u2014 possible diverted/grey-market stock.",
+    "status": "WARNING",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:53.405",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:53.376",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:53.348",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:53.265",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:50.106",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-2023",
+    "details": "Verdict: SUSPICIOUS | Reason: Code is registered with a manufacturer, but no authorised distributor ever dispatched it \u2014 possible diverted/grey-market stock.",
+    "status": "WARNING",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:50.087",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:50.034",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:50.003",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:49.712",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:34.402",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-2023",
+    "details": "Verdict: SUSPICIOUS | Reason: Code is registered with a manufacturer, but no authorised distributor ever dispatched it \u2014 possible diverted/grey-market stock.",
+    "status": "WARNING",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:34.377",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:34.341",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:34.280",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-18 17:35:34.125",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:34:50.681",
+    "category": "SQL_QUERY",
+    "action": "SQL Execution Error",
+    "details": "Target: federation | Query: SELECT \n    p.item_code,\n    p.item_name,\n    p.manufacturer_name,\n    p.batch_n | Error: near \"FROM\": syntax error",
+    "status": "ERROR",
+    "node": "SQL Console"
+  },
+  {
+    "timestamp": "2026-09-18 17:33:48.205",
+    "category": "SQL_QUERY",
+    "action": "Federated SELECT (GAV)",
+    "details": "Executed across mediator: SELECT \n    p.item_code,\n    p.item_name,\n    p.manufacturer_name,\n    p.batch_n | Returned 2 row(s)",
+    "status": "SUCCESS",
+    "node": "Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:33:30.795",
+    "category": "SQL_QUERY",
+    "action": "Federated SELECT (GAV)",
+    "details": "Executed across mediator: SELECT \n    p.item_code,\n    p.item_name,\n    p.manufacturer_name,\n    p.batch_n | Returned 2 row(s)",
+    "status": "SUCCESS",
+    "node": "Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:32:06.793",
+    "category": "SQL_QUERY",
+    "action": "Federated SELECT (GAV)",
+    "details": "Executed across mediator: SELECT \n    p.item_code,\n    p.item_name,\n    p.manufacturer_name,\n    p.batch_n | Returned 2 row(s)",
+    "status": "SUCCESS",
+    "node": "Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:31:10.927",
+    "category": "SQL_QUERY",
+    "action": "SQL Execution Error",
+    "details": "Target: federation | Query: SELECT * FROM GlobalItem where verdict = \"Suspicious\"; | Error: no such column: verdict",
+    "status": "ERROR",
+    "node": "SQL Console"
+  },
+  {
+    "timestamp": "2026-09-18 17:27:37.472",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-2023",
+    "details": "Verdict: SUSPICIOUS | Reason: Code is registered with a manufacturer, but no authorised distributor ever dispatched it \u2014 possible diverted/grey-market stock.",
+    "status": "WARNING",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:27:37.450",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:27:37.423",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:27:37.378",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-18 17:27:37.228",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:27:11.855",
+    "category": "DATA_ENTRY",
+    "action": "Insert Product",
+    "details": "Added 'MED-2023' (Ali) by Cipla Ltd, MRP: \u20b915.0",
+    "status": "SUCCESS",
+    "node": "Laptop 1 (Manufacturer)"
+  },
+  {
+    "timestamp": "2026-09-18 17:27:11.846",
+    "category": "FEDERATION",
+    "action": "Local DML Execution (Fallback)",
+    "details": "Executed DML on local 'manufacturer.db': affected 1 row(s)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:25:57.796",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1003",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:25:57.775",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:25:57.749",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:25:57.699",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-18 17:25:57.576",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:27.946",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:27.923",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:27.895",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:27.868",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:27.049",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:13.323",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-111",
+    "details": "Verdict: NAKLI | Reason: No manufacturer record exists for this code \u2014 it was never produced by any registered manufacturer.",
+    "status": "ERROR",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:13.303",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:13.243",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:13.193",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (0 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:12.375",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (0 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:06.728",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-111",
+    "details": "Verdict: NAKLI | Reason: No manufacturer record exists for this code \u2014 it was never produced by any registered manufacturer.",
+    "status": "ERROR",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:06.704",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:06.675",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:06.625",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (0 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:04:05.809",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (0 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:03:57.186",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-111",
+    "details": "Verdict: NAKLI | Reason: No manufacturer record exists for this code \u2014 it was never produced by any registered manufacturer.",
+    "status": "ERROR",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:03:57.163",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:03:57.095",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:03:57.069",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (0 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:03:56.256",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (0 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:00:48.545",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-111",
+    "details": "Verdict: NAKLI | Reason: No manufacturer record exists for this code \u2014 it was never produced by any registered manufacturer.",
+    "status": "ERROR",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 17:00:48.523",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:00:48.478",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 17:00:48.429",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (0 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 17:00:47.618",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (0 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 14:59:17.316",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-18 14:59:17.304",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 14:59:17.270",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-18 14:59:17.238",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-18 14:59:16.433",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'manufacturer.db' (Laptop 1): SELECT * FROM products WHERE mfr_item_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 16:00:49.372",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-777",
+    "details": "Verdict: SUSPICIOUS | Reason: Code is registered with a manufacturer, but no authorised distributor ever dispatched it \u2014 possible diverted/grey-market stock.",
+    "status": "WARNING",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 16:00:49.358",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 16:00:49.326",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 16:00:49.275",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-17 16:00:49.176",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 16:00:18.226",
+    "category": "DATA_ENTRY",
+    "action": "Insert Product",
+    "details": "Added 'MED-777' (AKSHAT) by Dr. Reddy's, MRP: \u20b920.0",
+    "status": "SUCCESS",
+    "node": "Laptop 1 (Manufacturer)"
+  },
+  {
+    "timestamp": "2026-09-17 16:00:18.211",
+    "category": "FEDERATION",
+    "action": "Remote DML Execution",
+    "details": "Executed DML on Laptop 1 (Laptop 1 (Manufacturer)): affected 1 row(s)",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 16:00:18.019",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 16:00:18.008",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 16:00:17.991",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 16:00:17.953",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-17 16:00:17.876",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:58:22.444",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:58:22.432",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:58:22.415",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:58:22.382",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:58:21.575",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:57:44.304",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:57:44.271",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:57:44.235",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:57:44.172",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:57:43.331",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:57:43.121",
+    "category": "SYSTEM",
+    "action": "File QR Decoded",
+    "details": "Decoded code 'MED-1001' from uploaded file",
+    "status": "SUCCESS",
+    "node": "File Scanner"
+  },
+  {
+    "timestamp": "2026-09-17 15:57:10.865",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:57:10.836",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:57:10.781",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:57:10.741",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:57:09.922",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:58.948",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:58.919",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:58.883",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:58.842",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:58.019",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:55.233",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:55.210",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:55.160",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:55.112",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:54.298",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:43.297",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:43.273",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:43.239",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:43.205",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:42.380",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:40.044",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:40.020",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:39.974",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:39.942",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:39.125",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:29.569",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:29.540",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:29.464",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:29.398",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:56:28.582",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:48.388",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:48.354",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:48.306",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:48.237",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:47.420",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:38.466",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:38.443",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:38.380",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:38.303",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:37.484",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:35.915",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:35.888",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:35.838",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:35.806",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (1 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:55:34.992",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:54.122",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: https://randomqr.com",
+    "details": "Verdict: NAKLI | Reason: No manufacturer record exists for this code \u2014 it was never produced by any registered manufacturer.",
+    "status": "ERROR",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:54.098",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:54.043",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:53.990",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (0 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:53.172",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:49.826",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: https://randomqr.com",
+    "details": "Verdict: NAKLI | Reason: No manufacturer record exists for this code \u2014 it was never produced by any registered manufacturer.",
+    "status": "ERROR",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:49.803",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:49.747",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:49.708",
+    "category": "FEDERATION",
+    "action": "Local Query (Fallback)",
+    "details": "Queried local disk 'distributor.db' (Laptop 2): SELECT * FROM distribution WHERE supplier_code = ?... (0 rows)",
+    "status": "INFO",
+    "node": "Local Mediator"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:48.887",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:17.001",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: https://randomqr.com",
+    "details": "Verdict: NAKLI | Reason: No manufacturer record exists for this code \u2014 it was never produced by any registered manufacturer.",
+    "status": "ERROR",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:16.977",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:16.933",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:16.874",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:16.797",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:54:16.590",
+    "category": "SYSTEM",
+    "action": "Camera QR Scanned",
+    "details": "Successfully decoded 'https://randomqr.com' from camera input",
+    "status": "SUCCESS",
+    "node": "Camera Scanner"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:49.081",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:49.050",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:48.990",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:48.947",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:48.883",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:46.144",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:46.114",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:46.060",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:46.027",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:45.967",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:41.169",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:41.141",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:41.089",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:41.043",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:40.979",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:38.584",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:38.557",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:38.485",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:38.451",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  },
+  {
+    "timestamp": "2026-09-17 15:53:38.401",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 1 (Manufacturer) (Laptop 1 @ http://192.168.44.123:5000) for: SELECT * FROM products WHERE mfr_item_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 1"
+  },
+  {
+    "timestamp": "2026-09-17 15:50:40.807",
+    "category": "DECISION_ENGINE",
+    "action": "Provenance Check: MED-1001",
+    "details": "Verdict: ASLI | Reason: Code is registered with a manufacturer and has a verified distribution trail with no fraud reports.",
+    "status": "SUCCESS",
+    "node": "Mediator Engine"
+  },
+  {
+    "timestamp": "2026-09-17 15:50:40.782",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 0 row(s) from Laptop 3 (Retail & Consumer) - Complaints (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM complaints WHERE flagged_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:50:40.735",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 3 (Retail & Consumer) - Sales (Laptop 3 @ http://192.168.44.106:5000) for: SELECT * FROM sales WHERE scanned_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 3"
+  },
+  {
+    "timestamp": "2026-09-17 15:50:40.671",
+    "category": "FEDERATION",
+    "action": "Remote SQL Query",
+    "details": "Fetched 1 row(s) from Laptop 2 (Distributor) (Laptop 2 @ http://192.168.45.91:5000) for: SELECT * FROM distribution WHERE supplier_code = ?...",
+    "status": "SUCCESS",
+    "node": "Laptop 2"
+  }
+]

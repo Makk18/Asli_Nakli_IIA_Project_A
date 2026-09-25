@@ -1,0 +1,20 @@
+{
+    "laptop_1_mfr": {
+        "name": "Laptop 1 (Manufacturer)",
+        "host": "192.168.44.123",
+        "port": 5000,
+        "db": "manufacturer.db"
+    },
+    "laptop_2_dist": {
+        "name": "Laptop 2 (Distributor)",
+        "host": "192.168.45.91",
+        "port": 5000,
+        "db": "distributor.db"
+    },
+    "laptop_3_retail": {
+        "name": "Laptop 3 (Retail & Consumer)",
+        "host": "192.168.44.106",
+        "port": 5000,
+        "db": "vendor.db & consumer_affairs.db"
+    }
+}
