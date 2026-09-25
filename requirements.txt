@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+opencv-python
+Pillow
+qrcode
+folium
+streamlit-folium
